@@ -19,6 +19,7 @@ import {
     starbucks,
     utlogo,
     armylab,
+    adobexd,
     tesla,
     shopify,
     carrent,
@@ -107,8 +108,8 @@ const technologies = [
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
+        name: "adobexd",
+        icon: adobexd,
     },
     {
         name: "docker",
