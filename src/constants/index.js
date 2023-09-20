@@ -5,6 +5,7 @@ import {
     web,
     javascript,
     typescript,
+    sass,
     html,
     css,
     reactjs,
@@ -12,20 +13,14 @@ import {
     tailwind,
     nodejs,
     mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
+    firebase,
+    swift,
+    cocoapods,
+    github,
     utlogo,
     armylab,
     adobexd,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    threejs, tesla,
 } from "../assets";
 
 export const navLinks = [
@@ -72,12 +67,12 @@ const technologies = [
         icon: css,
     },
     {
-        name: "JavaScript",
-        icon: javascript,
+        name: "SASS",
+        icon: sass,
     },
     {
-        name: "TypeScript",
-        icon: typescript,
+        name: "JavaScript",
+        icon: javascript,
     },
     {
         name: "React JS",
@@ -104,16 +99,24 @@ const technologies = [
         icon: threejs,
     },
     {
-        name: "git",
-        icon: git,
+        name: "Swift",
+        icon: swift,
     },
     {
-        name: "adobexd",
+        name: "Adobe XD",
         icon: adobexd,
     },
     {
-        name: "docker",
-        icon: docker,
+        name: "Cocoapods",
+        icon: cocoapods,
+    },
+    {
+        name: "Firebase",
+        icon: firebase,
+    },
+    {
+        name: "GitHub",
+        icon: github,
     },
 ];
 
@@ -194,7 +197,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: swift,
         source_code_link: "https://github.com/",
     },
     {
@@ -215,7 +218,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
+        image: cocoapods,
         source_code_link: "https://github.com/",
     },
     {
@@ -236,7 +239,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: tesla,
         source_code_link: "https://github.com/",
     },
 ];
