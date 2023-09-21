@@ -7,6 +7,8 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc/index.js';
 import { slideIn } from '../utils/motion.js';
 import emailKeys from "../assets/apiKeys/apiKeys.js";
+import SweetAlert from "react-bootstrap-sweetalert";
+
 
 
 const Contact = () => {
@@ -19,6 +21,11 @@ const Contact = () => {
     email: "",
     message: "",
   })
+
+  // Track the sweet alert so when the form, setForm is valid it'll render as such
+  const [showAlert, setShowAlert] = useState(false) // shows the alert
+  const [alertText, setAlertText] = useState('')    // sets the alert text to the user
+  const [alertType, setAlertType] = useState('success') // shows the failure or success type
 
   //  Track the loading state of the email being sent to us back
   const [loading, setLoading] = useState(false)
@@ -42,6 +49,15 @@ const Contact = () => {
     e.preventDefault()
     setLoading(true)
 
+    // validate the message and email fields aren't empty
+    if(!form.message || !form.email || !form.name) {
+        setLoading(false)
+        setAlertType('error')
+        setAlertText('Please fill out all input values such as your name, email, and message body completely' )
+        setShowAlert(true)
+        return ; //exits the function without sending anything
+    }
+
     // Added hidden emailKeys so GitHub doesn't steal them, or get publicly leaked
     emailjs.send(
         emailKeys.serviceID,
@@ -58,17 +74,21 @@ const Contact = () => {
         //  After the email has been sent with the passed values and to our EmailJS, thank user then reset form to empty again
         .then(() => {
           setLoading(false)
-          alert(`Thank you ${form.name}. I will get back to your message as soon as possible!`)
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          })
+          setAlertType("success")
+          setAlertText(`Thank you ${form.name}, I will get back to your message as soon as possible!`)
+          setShowAlert(true)
+            setForm({
+                name: "",
+                email: "",
+                message: "",
+            })
         }, (error) => {
           // when an error occurs, log to the console and alert the user something went wrong
           setLoading(false)
+          setAlertType("error")
+          setAlertText('Something went wrong, please make sure you are inputting correct email endings and/or name and message. Otherwise please email jesusariasthedeveloper@gmail.com manually to report any issues')
+          setShowAlert(true)
           console.log(error)
-          alert('Something went wrong, please email jesusariasthedeveloper@gmail.com manually to report any issues')
         })
   }
 
@@ -130,6 +150,22 @@ const Contact = () => {
               {loading ? 'Sending...': 'Send'}
             </button>
           </form>
+            {/* SWEETALERT COMPONENT */}
+            {showAlert && (
+                <SweetAlert
+                    title={alertType === "success" ? "Email Sent!" : "Error"}
+                    onConfirm={() => {
+                        console.log("User confirmed the action!")
+                        setShowAlert(false)
+                    }}
+                    onCancel={() => {
+                        console.log("User canceled the action")
+                        setShowAlert(false)
+                    }}
+                >
+                    {alertText}
+                </SweetAlert>
+            )}
         </motion.div>
 
         {/* Animate the Earth to the right on large screens, on top on mobile devices*/}

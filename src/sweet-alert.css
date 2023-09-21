@@ -1,0 +1,79 @@
+/* Example of custom styles for react-bootstrap-sweetalert */
+
+/* Customize the background color of the alert */
+.sweet-alert {
+    background-color: #fff;
+    color: #000000;
+}
+
+/* Customize the title text color */
+.sweet-alert h2 {
+    color: #ff533b;
+}
+
+/* Customize the message text color */
+.sweet-alert p {
+
+}
+
+.sweet-alert a {
+    color: #f0f0f0;
+    background-color: #007bff;
+    border-radius: 10px;
+    padding-top: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+/* Customize the button styles */
+.sweet-alert button.confirm,
+.sweet-alert button.cancel {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Customize the button hover styles */
+.sweet-alert button.confirm:hover,
+.sweet-alert button.cancel:hover {
+    background-color: #0056b3;
+}
+
+/* Customize the button margin or spacing */
+.sweet-alert button.confirm {
+    margin-right: 10px;
+}
+
+/* Customize the text area within the alert */
+.sweet-alert textarea {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing of the text area */
+}
+
+/* Optionally, style the placeholder text within the text area */
+.sweet-alert textarea::placeholder {
+    color: #999;
+}
+
+/* Customize the icon color based on the alert type */
+.sweet-alert [class^="icon-"] {
+    color: #007bff; /* Change the icon color for success alerts */
+}
+
+/* Customize the loading spinner color (if applicable) */
+.sweet-alert .loader {
+    border: 4px solid #007bff; /* Change the spinner border color */
+    border-top: 4px solid #fff; /* Change the spinner top border color */
+}
+
+/* Customize the overlay background color and opacity */
+.sweet-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}

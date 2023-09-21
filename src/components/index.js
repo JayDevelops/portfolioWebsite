@@ -7,6 +7,7 @@ import Experience from './Experience.jsx';
 import Works from './Works.jsx';
 import Feedbacks from './Feedbacks.jsx';
 import Contact from './Contact.jsx';
+import FooterBar from "./FooterBar.jsx";
 
 export {
   Hero,
@@ -20,5 +21,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  FooterBar,
 }

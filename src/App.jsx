@@ -1,6 +1,6 @@
 // import react-router-dom and .jsx pages/components below
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Hero, Tech, Navbar, Works, StarsCanvas, Feedbacks } from './components'
+import { About, Contact, Experience, Hero, Tech, Navbar, Works, StarsCanvas, Feedbacks, FooterBar } from './components'
 
 // Main app will be rendered all here
 const App = () => {
@@ -24,6 +24,7 @@ const App = () => {
                     <Contact />
                     <StarsCanvas />
                 </div>
+                <FooterBar />
             </div>
         </BrowserRouter>
     )
