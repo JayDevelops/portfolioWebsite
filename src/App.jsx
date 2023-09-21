@@ -17,7 +17,8 @@ const App = () => {
                 <Experience />
                 <Tech />
                 <Works />
-                <Feedbacks />
+                {/*ONCE I GET TESTIMONIALS, INSERT BELOW*/}
+                {/*<Feedbacks />*/}
                 {/* 3D stars for inner div below */}
                 <div className="relative z-0">
                     <Contact />

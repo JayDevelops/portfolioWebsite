@@ -17,7 +17,7 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import adobexd from "./tech/adobexd.png"
+import adobexd from "./tech/adobexd.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import sass from "./tech/sass.png";
@@ -26,11 +26,20 @@ import cocoapods from "./tech/cocoapods.png";
 import swift from "./tech/swift.png"
 
 import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import utlogo from "./company/utlogo.png";
 import armylab from "./company/armylab.png";
+
+// Import portfolio images below
+import universityTimesSite from "./portfolioImages/universityTimesSite.png";
+import nodeWeatherApp from "./portfolioImages/nodeWeatherApp.png";
+import emailFormSite from "./portfolioImages/emailFormSite.png";
+import simonGameDemo from "./portfolioImages/simonGameDemo.gif";
+import pongDemo from "./portfolioImages/pongDemo.gif";
+import bitcoinTicker from "./portfolioImages/bitcoinTickerDemo.gif";
+
+// Add a .gitignore for these apiKeys.js file, so no one steals it from our application
+import apiKeys from "./apiKeys/apiKeys.js"
 
 export {
   logo,
@@ -54,9 +63,7 @@ export {
   typescript,
   threejs,
   meta,
-  shopify,
   adobexd,
-  starbucks,
   utlogo,
   armylab,
   tesla,
@@ -64,4 +71,11 @@ export {
   swift,
   firebase,
   cocoapods,
+  universityTimesSite,
+  nodeWeatherApp,
+  emailFormSite,
+  simonGameDemo,
+  pongDemo,
+  bitcoinTicker,
+  apiKeys
 };

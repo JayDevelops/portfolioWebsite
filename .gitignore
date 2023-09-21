@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# API keys that needs to be hidden below, so they don't get pushed to github
+apiKeys.js

@@ -3,8 +3,6 @@ import {Canvas, useFrame, useLoader, useThree} from "@react-three/fiber";
 import {OrbitControls, Preload, useGLTF, SpotLight, useDepthBuffer} from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
-import {Vector3} from "three";
-import {GLTFLoader} from "three-stdlib";
 
 //  Computers scene changes when mobile, pass isMobile as a prop
 const Computers = (isMobile) => {

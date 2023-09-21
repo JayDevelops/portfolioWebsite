@@ -4,10 +4,13 @@ import {
     creator,
     web,
     javascript,
-    typescript,
+    universityTimesSite,
+    nodeWeatherApp,
+    emailFormSite,
+    simonGameDemo,
+    pongDemo,
     sass,
     html,
-    css,
     reactjs,
     redux,
     tailwind,
@@ -15,13 +18,14 @@ import {
     mongodb,
     firebase,
     swift,
-    cocoapods,
     github,
     utlogo,
     armylab,
     adobexd,
-    threejs, tesla,
+    threejs,
+    bitcoinTicker,
 } from "../assets";
+import {apiKeys} from "../assets";
 
 export const navLinks = [
     {
@@ -51,20 +55,12 @@ const services = [
         title: "WordPress Developer",
         icon: backend,
     },
-    {
-        title: "Content Creator",
-        icon: creator,
-    },
 ];
 
 const technologies = [
     {
         name: "HTML 5",
         icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
     },
     {
         name: "SASS",
@@ -105,10 +101,6 @@ const technologies = [
     {
         name: "Adobe XD",
         icon: adobexd,
-    },
-    {
-        name: "Cocoapods",
-        icon: cocoapods,
     },
     {
         name: "Firebase",
@@ -180,67 +172,98 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "University Times",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "California State University Los Angeles student run website where weekly news is posted by journalists. Used PHP, JavaScript, and WordPress achieved a 40% faster loading time and added various modern new UI elements.",
         tags: [
             {
-                name: "react",
-                color: "blue-text-gradient",
+                name: "JavaScript",
+                color: "text-yellow-400",
             },
             {
-                name: "mongodb",
-                color: "green-text-gradient",
+                name: "PHP",
+                color: "text-indigo-300",
             },
             {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
+                name: "CSS",
+                color: "text-cyan-500"
+            }
         ],
-        image: swift,
-        source_code_link: "https://github.com/",
+        image: universityTimesSite,
+        source_code_link: "https://csulauniversitytimes.com/",
+        source_image: utlogo,
     },
     {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: cocoapods,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Trip Guide",
+        name: "Simon JavaScript Game",
         description:
             "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
         tags: [
             {
-                name: "nextjs",
-                color: "blue-text-gradient",
+                name: "JavaScript",
+                color: "text-yellow-400",
             },
             {
-                name: "supabase",
+                name: "BootStrap",
+                color: "text-cyan-500",
+            },
+        ],
+        image: simonGameDemo,
+        source_code_link: "https://github.com/JayDevelops/simon-game",
+        source_image: github,
+    },
+    {
+        name: "Swift Pong Game",
+        description:
+            "A simple retro pong game where you are battling a CPU, can you reach a high score? New features such as an end screen and starting screen will come soon. There's Easy, Medium, Hard, or 2 Player Mode!",
+        tags: [
+            {
+                name: "Swift",
+                color: "text-orange-400",
+            },
+        ],
+        image: pongDemo,
+        source_code_link: "https://github.com/JayDevelops/pongGame-master",
+        source_image: github,
+    },
+    {
+        name: "BitCoin Ticker",
+        description:
+            "This simple Swift App lets you find the current Bitcoin value in whichever currency you pick this uses retrieved JSON and an API that I coded on Xcode.",
+        tags: [
+            {
+                name: "Swift",
+                color: "text-orange-400",
+            },
+        ],
+        image: bitcoinTicker,
+        source_code_link: "https://github.com/JayDevelops/bitcoinAppTracker/tree/master",
+        source_image: github,
+    },
+    {
+        name: "Node Email Site",
+        description:
+            "Web application which checks whether contact information is in correct format, if not then sends them to a failure.html to the client side- created through the use of JavaScript, HTML, BootStrap and Node.js.",
+        tags: [
+            {
+                name: "Node.js",
+                color: "text-yellow-400",
+            },
+            {
+                name: "JavaScript",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "SASS",
                 color: "pink-text-gradient",
             },
+            {
+                name: "BootStrap",
+                color: "text-cyan-500",
+            }
         ],
-        image: tesla,
-        source_code_link: "https://github.com/",
+        image: emailFormSite,
+        source_code_link: "https://github.com/JayDevelops/newsletter-signup",
+        source_image: github,
     },
 ];
 
