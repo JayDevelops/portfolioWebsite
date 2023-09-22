@@ -38,6 +38,9 @@ import simonGameDemo from "./portfolioImages/simonGameDemo.gif";
 import pongDemo from "./portfolioImages/pongDemo.gif";
 import bitcoinTicker from "./portfolioImages/bitcoinTickerDemo.gif";
 
+// Import footer (socialMediaImages) below
+import linkeidn from "./socialMediaImages/linkedin.png";
+
 // Add a .gitignore for these apiKeys.js file, so no one steals it from our application
 import apiKeys from "./apiKeys/apiKeys.js"
 
@@ -77,5 +80,6 @@ export {
   simonGameDemo,
   pongDemo,
   bitcoinTicker,
-  apiKeys
+  apiKeys,
+  linkeidn,
 };

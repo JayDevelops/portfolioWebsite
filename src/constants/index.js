@@ -24,6 +24,7 @@ import {
     adobexd,
     threejs,
     bitcoinTicker,
+    linkeidn,
 } from "../assets";
 import {apiKeys} from "../assets";
 
@@ -267,4 +268,36 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const footerLinks = [
+    {
+        title: "Social Media",
+        items: [
+            {
+                name: "LinkedIn",
+                url: "https://www.linkedin.com/in/jesusperezarias/",
+                font_icon: "fa-brands fa-linkedin fa-beat",
+                style: "color: #0433ff;"
+            },
+            {
+                name: "Instagram",
+                url: "https://www.instagram.com/jay.develops/",
+                font_icon: "fa-brands fa-instagram fa-beat",
+                style: "color: #ad300;"
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/JayDevelops",
+                font_icon: "fa-brands fa-github fa-github fa-beat",
+                style: "color: #444444;"
+            },
+            {
+                name: "Twitter",
+                url: "https://twitter.com/jay_develops_",
+                font_icon: "fa-brands fa-twitter fa-beat",
+                style: "color: #00fdff;",
+            },
+        ],
+    },
+];
+
+export { services, technologies, experiences, testimonials, projects, footerLinks };

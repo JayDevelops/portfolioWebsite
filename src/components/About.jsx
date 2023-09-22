@@ -60,7 +60,7 @@ const About = () => {
           With my three plus years of experience in the industry, we can bring your ideas to life.
         </motion.p>
 
-        <div className="mt-20 flex flex-wrap gap-10">
+        <div className="mt-20 mx-10 flex flex-wrap gap-10 justify-center sm:justify-start">
           {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service}/>
           ))}
