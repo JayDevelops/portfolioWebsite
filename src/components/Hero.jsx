@@ -13,11 +13,10 @@ const Hero = () => {
             {/* LANDING PAGE TEXT CONTENT BELOW */}
             <div>
                 <h1 className={`${styles.heroHeadText} text-white pr-10 leading-tight`}>
-                    Greetings! I'm <span className={"text-[#ff533b]"}> Jesus Perez </span>
+                    Hello! I'm <span className={"text-[#ff533b]"}> Jesus Perez </span>
                 </h1>
                 <p className={`${styles.heroSubText} mt-2 text-white-100 pr-20`}>
-                    I create dynamic fullstack websites using MERN, Apple Applications
-                    in Swift, and make tech in my free time.
+                    I create dynamic fullstack websites using MERN, and make Apple Applications in Swift.
                 </p>
             </div>
         </div>
