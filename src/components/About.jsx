@@ -57,7 +57,7 @@ const About = () => {
           optimizing user experience and boosting operational efficiency by 40% for ArmyLab corporation
           Loves using full-stack web applications such as MongoDB, ExpressJS, ReactJS, and Node.js- delivering functional
           yet beautiful made websites and Swift for optimized iDevice functionality.
-          With my three plus years of experience in the industry, we can bring your ideas to life.
+          With my three plus years of experience in the industry, we can bring your ideas to life as I'm open for FreeLance work and Full Time Employment.
         </motion.p>
 
         <div className="mt-20 mx-10 flex flex-wrap gap-10 justify-center sm:justify-start">
