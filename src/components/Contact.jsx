@@ -1,5 +1,5 @@
 import React, {useRef, useState} from 'react';
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
@@ -7,7 +7,6 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc/index.js';
 import { slideIn } from '../utils/motion.js';
 import SweetAlert from "react-bootstrap-sweetalert";
-
 
 
 const Contact = () => {
@@ -21,7 +20,11 @@ const Contact = () => {
     message: "",
   })
 
-  // Track the sweet alert so when the form, setForm is valid it'll render as such
+  // Get the environment values below
+    const { VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY } = import.meta.env;
+
+
+    // Track the sweet alert so when the form, setForm is valid it'll render as such
   const [showAlert, setShowAlert] = useState(false) // shows the alert
   const [alertText, setAlertText] = useState('')    // sets the alert text to the user
   const [alertType, setAlertType] = useState('success') // shows the failure or success type
@@ -59,8 +62,8 @@ const Contact = () => {
 
     // Added hidden emailKeys so GitHub doesn't steal them, or get publicly leaked
     emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        VITE_EMAILJS_SERVICE_ID,
+        VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Jesus Perez",
@@ -68,7 +71,7 @@ const Contact = () => {
           to_email: "jesusariasthedeveloper@gmail.com",
           message: form.message,
         },
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        VITE_EMAILJS_PUBLIC_KEY
         )
         //  After the email has been sent with the passed values and to our EmailJS, thank user then reset form to empty again
         .then(() => {

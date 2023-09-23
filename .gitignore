@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # API keys that needs to be hidden below, so they don't get pushed to github
-src/apiKeys.env
+.env
