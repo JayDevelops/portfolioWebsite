@@ -21,7 +21,7 @@ const Contact = () => {
   })
 
   // Get the environment values below
-    const { VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY } = import.meta.env;
+    const { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } = process.env;
 
 
     // Track the sweet alert so when the form, setForm is valid it'll render as such
@@ -62,8 +62,8 @@ const Contact = () => {
 
     // Added hidden emailKeys so GitHub doesn't steal them, or get publicly leaked
     emailjs.send(
-        VITE_EMAILJS_SERVICE_ID,
-        VITE_EMAILJS_TEMPLATE_ID,
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Jesus Perez",
@@ -71,7 +71,7 @@ const Contact = () => {
           to_email: "jesusariasthedeveloper@gmail.com",
           message: form.message,
         },
-        VITE_EMAILJS_PUBLIC_KEY
+        EMAILJS_PUBLIC_KEY
         )
         //  After the email has been sent with the passed values and to our EmailJS, thank user then reset form to empty again
         .then(() => {
