@@ -5,9 +5,15 @@ import 'react-bootstrap-sweetalert/dist'
 import './sweet-alert.css'
 import 'rc-footer/assets/index.css';
 import './index.css'
+import {DevSupport} from "@react-buddy/ide-toolbox";
+import {ComponentPreviews, useInitial} from "./dev";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <React.StrictMode>
+        <DevSupport ComponentPreviews={ComponentPreviews}
+                    useInitialHook={useInitial}
+        >
+            <App/>
+        </DevSupport>
+    </React.StrictMode>,
 )

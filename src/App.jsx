@@ -1,6 +1,7 @@
 // import react-router-dom and .jsx pages/components below
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Hero, Tech, Navbar, Works, StarsCanvas, Feedbacks, FooterBar } from './components'
+import {Analytics} from "@vercel/analytics/react";
 
 // Main app will be rendered all here
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
                 </div>
                 <FooterBar />
             </div>
+            <Analytics />
         </BrowserRouter>
     )
 }
