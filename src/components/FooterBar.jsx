@@ -20,8 +20,7 @@ export const FooterBar = () => {
                                 {/* Column Header for Footer Below*/}
                                 <Typography
                                     variant="small"
-                                    color="text-slate-300"
-                                    className="mb-3 font-medium opacity-70"
+                                    className="mb-3 font-medium opacity-70 text-slate-300"
                                 >
                                     {title}
                                 </Typography>
@@ -32,7 +31,7 @@ export const FooterBar = () => {
                                         <Typography
                                             as="a"
                                             href={link.url}
-                                            color="text-slate-100"
+                                            className="text-slate-100"
                                         >
                                             <a
                                                 href={link.url}

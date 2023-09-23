@@ -25,9 +25,9 @@ const Hero = () => {
           <ComputersCanvas />
 
           {/* Framer motion Scrolling Icon */}
-          <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+          <div className="absolute xs:bottom-11 bottom-32 w-full flex flex-col justify-center items-center">
               <a href="#about" id="about">
-                  <div className="w-[35px] h-[64px] rounded-full border-4 border-secondary flex justify-center items-start p-2 hover:bg-amber-300 transition duration-0 hover:duration-150 ">
+                  <div className="w-[35px] h-[64px] rounded-full border-4 border-secondary flex justify-center p-2 hover:bg-amber-300 transition duration-150 hover:duration-150">
                       <motion.div
                           animate={ { y: [0, 24, 0] } }
                           transition={{
@@ -39,6 +39,30 @@ const Hero = () => {
                       />
                   </div>
               </a>
+
+              <div className="flex justify-center items-center mt-2">
+                  <motion.p
+                      initial={{
+                          scale: 1,
+                          color: "#CBD5E1"
+                  }}
+                      animate={{
+                          scale: [1, 1.1, 1],
+                          color: ["#CBD5E1", "#FBBF24", "#CBD5E1"]
+                  }}
+                      transition={{
+                          duration: 1.5,
+                          repeat: Infinity,
+                          repeatType: 'reverse',
+                          ease: [0.42, 0, 1, 1],
+                      }}
+                      style={{color: "#CBD5E1"}}
+                      className="text-[12px]"
+                  >
+                      Click Me to Scroll Down
+                  </motion.p>
+              </div>
+
           </div>
       </section>
   )

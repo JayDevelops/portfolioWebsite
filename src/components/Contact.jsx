@@ -6,7 +6,6 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc/index.js';
 import { slideIn } from '../utils/motion.js';
-import emailKeys from "../assets/apiKeys/apiKeys.js";
 import SweetAlert from "react-bootstrap-sweetalert";
 
 
@@ -60,8 +59,8 @@ const Contact = () => {
 
     // Added hidden emailKeys so GitHub doesn't steal them, or get publicly leaked
     emailjs.send(
-        emailKeys.serviceID,
-        emailKeys.templateID,
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Jesus Perez",
@@ -69,7 +68,7 @@ const Contact = () => {
           to_email: "jesusariasthedeveloper@gmail.com",
           message: form.message,
         },
-        emailKeys.publicKey
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
         )
         //  After the email has been sent with the passed values and to our EmailJS, thank user then reset form to empty again
         .then(() => {

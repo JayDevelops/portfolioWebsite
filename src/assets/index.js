@@ -41,8 +41,6 @@ import bitcoinTicker from "./portfolioImages/bitcoinTickerDemo.gif";
 // Import footer (socialMediaImages) below
 import linkeidn from "./socialMediaImages/linkedin.png";
 
-// Add a .gitignore for these apiKeys.js file, so no one steals it from our application
-import apiKeys from "./apiKeys/apiKeys.js"
 
 export {
   logo,
@@ -80,6 +78,5 @@ export {
   simonGameDemo,
   pongDemo,
   bitcoinTicker,
-  apiKeys,
   linkeidn,
 };

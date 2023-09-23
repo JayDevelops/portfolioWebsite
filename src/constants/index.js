@@ -26,7 +26,6 @@ import {
     bitcoinTicker,
     linkeidn,
 } from "../assets";
-import {apiKeys} from "../assets";
 
 export const navLinks = [
     {
