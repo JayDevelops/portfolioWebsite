@@ -15,8 +15,8 @@ export const FooterBar = () => {
                         Jesus Perez Arias Portfolio
                     </Typography>
                     <div className="grid grid-cols-2 justify-between gap-2">
-                        {footerLinks.map(( {title, items} ) => (
-                            <ul key={title}>
+                        {footerLinks.map(( {title, items}, index) => (
+                            <ul key={`${title}-${index}`}>
                                 {/* Column Header for Footer Below*/}
                                 <Typography
                                     variant="small"
@@ -26,11 +26,9 @@ export const FooterBar = () => {
                                 </Typography>
 
                                 {/* Inner Links Will Be Rendered Below*/}
-                                {items.map((link) => (
-                                    <li key={link}>
+                                {items.map((link, index) => (
+                                    <li key={`${title}-${index}`}>
                                         <Typography
-                                            as="a"
-                                            href={link.url}
                                             className="text-slate-100"
                                         >
                                             <a
@@ -62,13 +60,13 @@ export const FooterBar = () => {
                     {/* START OF ICONS BELOW */}
                     <div className="flex gap-4 sm:justify-center">
                         {footerLinks.map(({items}) => (
-                            items.map((item) => (
-                                <IconButton className="h-5 w-5">
+                            items.map((item, index) => (
+                                <IconButton key={`${item.name}-${index}`} className="h-5 w-5">
                                     <a
                                         href={item.url}
                                         target="_blank"
                                     >
-                                        <i className={item.font_icon} style={{color: item.style}}/>
+                                        <i className={item.font_icon} style={{color: item.color}}/>
                                     </a>
                                 </IconButton>
                             ))

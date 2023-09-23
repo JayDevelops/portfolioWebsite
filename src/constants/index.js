@@ -275,25 +275,25 @@ const footerLinks = [
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/jesusperezarias/",
                 font_icon: "fa-brands fa-linkedin fa-beat",
-                style: "color: #0433ff;"
+                color: "#0433ff"
             },
             {
                 name: "Instagram",
                 url: "https://www.instagram.com/jay.develops/",
                 font_icon: "fa-brands fa-instagram fa-beat",
-                style: "color: #ad300;"
+                color: "#ad300"
             },
             {
                 name: "GitHub",
                 url: "https://github.com/JayDevelops",
                 font_icon: "fa-brands fa-github fa-github fa-beat",
-                style: "color: #444444;"
+                color: "#444444"
             },
             {
                 name: "Twitter",
                 url: "https://twitter.com/jay_develops_",
                 font_icon: "fa-brands fa-twitter fa-beat",
-                style: "color: #00fdff;",
+                color: "#00fdff",
             },
         ],
     },
