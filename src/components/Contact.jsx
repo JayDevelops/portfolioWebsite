@@ -7,7 +7,7 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc/index.js';
 import { slideIn } from '../utils/motion.js';
 import SweetAlert from "react-bootstrap-sweetalert";
-
+import {EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY} from "../../config.js";
 
 const Contact = () => {
   //  Use the reference from the form, properties on the jsx
@@ -19,10 +19,6 @@ const Contact = () => {
     email: "",
     message: "",
   })
-
-  // Get the environment values below
-    const { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } = process.env;
-
 
     // Track the sweet alert so when the form, setForm is valid it'll render as such
   const [showAlert, setShowAlert] = useState(false) // shows the alert
