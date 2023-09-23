@@ -7,7 +7,8 @@ import 'react-vertical-timeline-component/style.min.css'
 import { styles } from '../styles'
 import { experiences } from '../constants'
 import { SectionWrapper } from '../hoc'
-import { textVariant } from '../utils/motion'
+import {fadeIn, textVariant} from '../utils/motion'
+import Tilt from "react-parallax-tilt";
 
 // TODO: Create component for WorkIcon which only creates the Icon on the left
 const WorkIcon = ( {experience} ) => {
@@ -61,6 +62,25 @@ const ExperienceCard = ( {experience} ) => {
   )
 }
 const Experience = () => {
+    //  Retrieve the resume below
+    const resumeFile = "jesusPerezResume2023.pdf"
+
+    // Download resume onClick handler
+    const downloadResume = () => {
+        fetch(resumeFile).then(res => {
+            res.blob().then(blob => {
+                // Create the fileURL
+                const fileURL = window.URL.createObjectURL(blob)
+
+                //  set props
+                let aLink = document.createElement("a")
+                aLink.href = fileURL
+                aLink.download = resumeFile
+                aLink.click()
+            })
+        })
+    }
+
   return (
       <>
         {/* Start of Experience Headline, ID using "work" for SectionWrapper*/}
@@ -84,6 +104,40 @@ const Experience = () => {
             ))}
           </VerticalTimeline>
         </div>
+
+
+          <motion.div variants={textVariant()} className="mt-20">
+              <p className={styles.sectionSubText}>
+                  My resume in it's full glory...
+              </p>
+              <h2 className={styles.sectionHeadText}>
+                  Resume
+              </h2>
+          </motion.div>
+
+          <div className="w-full flex">
+              <motion.p
+                  variants={fadeIn(" ", " ", 0.1, 1)}
+                  className="mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]"
+              >
+                  My timeline only details some brief moments of my career life, below is a button that does one thing which is downloading a PDF version of my Resume.
+                  My resume is always up to date on my website, LinkedIn, and other job sites when I apply. Please take a look and let me know for any feedback you may stumble upon :)
+              </motion.p>
+          </div>
+
+          <div className="mt-20 flex justify-center items-center justify-center">
+              <motion.div variants={textVariant()} className="flex flex-col gap-8">
+                  <Tilt className="xs:w-[180px] w-full">
+                      <motion.button
+                          variants={fadeIn("right", "spring", 0.6, 0.75)}
+                          className="bg-gray-700 rounded-md text-white font-bold px-6 py-3 relative before:w-full before:h-full before:scale-x-[1.15] before:scale-y-[1.35] before:absolute before:top-[50%] before:left-[50%] before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] before:from-rose-500 before:via-purple-500 before:bg-gradient-to-br before:rounded-md hover:bg-gray-600 transition-all duration-300"
+                          onClick={downloadResume}
+                      >
+                          <span className="text-[14px] text-white-200">Download My Resume</span>
+                      </motion.button>
+                  </Tilt>
+              </motion.div>
+          </div>
       </>
   )
 }
