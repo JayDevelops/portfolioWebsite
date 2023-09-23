@@ -85,7 +85,7 @@ const Contact = () => {
           // when an error occurs, log to the console and alert the user something went wrong
           setLoading(false)
           setAlertType("error")
-          setAlertText('Something went wrong, please make sure you are inputting correct email endings and/or name and message. Otherwise please email jesusariasthedeveloper@gmail.com manually to report any issues')
+          setAlertText('Something went wrong, please make sure you are inputting correct email endings and/or name and message. Otherwise please email contact@jesusperez.dev manually to report any issues')
           setShowAlert(true)
           console.log(error)
         })
