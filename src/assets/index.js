@@ -23,7 +23,7 @@ import threejs from "./tech/threejs.svg";
 import sass from "./tech/sass.png";
 import firebase from "./tech/firebase.png";
 import cocoapods from "./tech/cocoapods.png";
-import swift from "./tech/swift.png"
+import swift from "./tech/swift.png";
 
 import meta from "./company/meta.png";
 import tesla from "./company/tesla.png";
@@ -37,10 +37,10 @@ import emailFormSite from "./portfolioImages/emailFormSite.png";
 import simonGameDemo from "./portfolioImages/simonGameDemo.gif";
 import pongDemo from "./portfolioImages/pongDemo.gif";
 import bitcoinTicker from "./portfolioImages/bitcoinTickerDemo.gif";
+import soundPillars from "./portfolioImages/soundPillarsVisual.gif";
 
 // Import footer (socialMediaImages) below
 import linkeidn from "./socialMediaImages/linkedin.png";
-
 
 export {
   logo,
@@ -73,6 +73,7 @@ export {
   firebase,
   cocoapods,
   universityTimesSite,
+  soundPillars,
   nodeWeatherApp,
   emailFormSite,
   simonGameDemo,
