@@ -146,16 +146,16 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
+      "I thought it was impossible to make a website as beautiful as our product, but _Blank_ proved me wrong.",
+    name: "_Blank_",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
+      "I've never met a web developer who truly cares about their clients' success like _Blank_ does.",
+    name: "_blank_",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
@@ -163,7 +163,7 @@ const testimonials = [
   {
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+    name: "_Blank_",
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
@@ -266,32 +266,32 @@ const projects = [
       "https://github.com/JayDevelops/bitcoinAppTracker/tree/master",
     source_image: github,
   },
-  {
-    name: "Node Email Site",
-    description:
-      "Web application which checks whether contact information is in correct format, if not then sends them to a failure.html to the client side- created through the use of JavaScript, HTML, BootStrap and Node.js.",
-    tags: [
-      {
-        name: "Node.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "text-yellow-400",
-      },
-      {
-        name: "SASS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "BootStrap",
-        color: "text-cyan-500",
-      },
-    ],
-    image: emailFormSite,
-    source_code_link: "https://github.com/JayDevelops/newsletter-signup",
-    source_image: github,
-  },
+  // {
+  //   name: "Node Email Site",
+  //   description:
+  //     "Web application which checks whether contact information is in correct format, if not then sends them to a failure.html to the client side- created through the use of JavaScript, HTML, BootStrap and Node.js.",
+  //   tags: [
+  //     {
+  //       name: "Node.js",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "JavaScript",
+  //       color: "text-yellow-400",
+  //     },
+  //     {
+  //       name: "SASS",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "BootStrap",
+  //       color: "text-cyan-500",
+  //     },
+  //   ],
+  //   image: emailFormSite,
+  //   source_code_link: "https://github.com/JayDevelops/newsletter-signup",
+  //   source_image: github,
+  // },
 ];
 
 const footerLinks = [
