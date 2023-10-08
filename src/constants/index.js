@@ -216,7 +216,7 @@ const projects = [
       },
     ],
     image: soundPillars,
-    source_code_link: "https://sound-pillars.vercel.app",
+    source_code_link: "https://soundpillars.jesusperez.dev",
     source_image: threejs,
   },
   {
