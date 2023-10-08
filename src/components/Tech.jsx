@@ -1,10 +1,10 @@
 import React from "react";
 import { BallCanvas } from "./canvas/index.js";
-import { SectionWrapper } from "../../hoc/index.js";
-import { technologies } from "../../constants/index.js";
-import { styles } from "../../styles.js";
+import { SectionWrapper } from "../hoc/index.js";
+import { technologies } from "../constants/index.js";
+import { styles } from "../styles.js";
 import { motion } from "framer-motion";
-import { textVariant } from "../../utils/motion.js";
+import { textVariant } from "../utils/motion.js";
 
 const Tech = () => {
   return (

@@ -2,16 +2,16 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-import { styles } from "../../styles.js";
+import { styles } from "../styles.js";
 import { EarthCanvas } from "./canvas/index.js";
-import { SectionWrapper } from "../../hoc/index.js";
-import { slideIn } from "../../utils/motion.js";
+import { SectionWrapper } from "../hoc/index.js";
+import { slideIn } from "../utils/motion.js";
 import SweetAlert from "react-bootstrap-sweetalert";
 import {
   EMAILJS_SERVICE_ID,
   EMAILJS_TEMPLATE_ID,
   EMAILJS_PUBLIC_KEY,
-} from "../../../config.js";
+} from "../../config.js";
 
 const Contact = () => {
   //  Use the reference from the form, properties on the jsx

@@ -1,8 +1,8 @@
 import React from "react";
 import { IconButton, Typography } from "@material-tailwind/react";
 
-import { SectionWrapper } from "../../hoc/index.js";
-import { footerLinks } from "../../constants/index.js";
+import { SectionWrapper } from "../hoc/index.js";
+import { footerLinks } from "../constants/index.js";
 
 export const FooterBar = () => {
   const currentYear = new Date().getFullYear();

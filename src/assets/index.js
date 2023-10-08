@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "../app/logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -23,7 +23,7 @@ import threejs from "./tech/threejs.svg";
 import sass from "./tech/sass.png";
 import firebase from "./tech/firebase.png";
 import cocoapods from "./tech/cocoapods.png";
-import swift from "./tech/swift.png"
+import swift from "./tech/swift.png";
 
 import meta from "./company/meta.png";
 import tesla from "./company/tesla.png";
@@ -40,7 +40,6 @@ import bitcoinTicker from "./portfolioImages/bitcoinTickerDemo.gif";
 
 // Import footer (socialMediaImages) below
 import linkeidn from "./socialMediaImages/linkedin.png";
-
 
 export {
   logo,
